@@ -49,7 +49,7 @@ var windowHeight=window.innerHeight;
 document.addEventListener('scroll', () => {
     console.log(window.scrollY)
     console.log(window.innerHeight)
-    if(window.scrollY>5*windowHeight/2&&window.scrollY<=7*windowHeight/2){
+    if(window.scrollY>5*windowHeight/2){
         sidebar.style.filter='invert(0)'
         console.log('black target 3')
         sidebar.style.opacity='1';
