@@ -276,7 +276,7 @@ h4::after{
     top:50%;
     transform: translateY(-50%);
     left:0;
-
+    opacity: 0;
    
 }
 .sidebar div{
