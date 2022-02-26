@@ -70,6 +70,19 @@ var memoji = document.querySelector("#memoji");
 memoji.addEventListener("suspend", () => {
   memoji.play();
 });
+$(document).ready(function(){
+  if (isScrolledIntoView('#about-text')){
+  }})
+function isScrolledIntoView(elem)
+{
+    var docViewTop = $(window).scrollTop();
+    var docViewBottom = docViewTop + $(window).height();
+
+    var elemTop = $(elem).offset().top;
+    var elemBottom = elemTop + $(elem).height();
+
+    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+}
 // var form=document.querySelector('#form');
 // form.addEventListener('submit',(e)=>{
 //     e.preventDefault();
