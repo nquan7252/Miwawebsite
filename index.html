@@ -8,7 +8,9 @@
 </head>
 
 <body>
+
     <section class='index'>
+        <div id="particles-js"></div>
         <img id='portrait' src="image1.png" />
         <div class='hero'>
             <header>MIWA</header>
@@ -140,5 +142,11 @@
             offset:300,
             duration:1000
         });
+    </script>
+    <script src='https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js'></script>
+    <script>
+        particlesJS.load('particles-js', 'particles.json', function() {
+  console.log('callback - particles.js config loaded');
+});
     </script>
 </body>
