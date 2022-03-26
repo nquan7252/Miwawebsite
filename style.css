@@ -104,6 +104,7 @@ a:hover{
 .about{
     background-color: white;
     color:black;
+    overflow-y:hidden;
 }
 #rocket{
     width: 60px;
