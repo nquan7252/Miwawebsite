@@ -204,6 +204,8 @@ p{
 .projects{
     padding: 0 200px;
     padding-bottom: 100px;
+    min-height:100vh;
+    height:max-content;
 }
 .projects h4::after{
     margin-left: 40px;
