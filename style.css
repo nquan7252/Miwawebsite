@@ -26,7 +26,7 @@ body{
     transform-origin: left;
     border: 2px solid #FFF;
     box-sizing: border-box;
-    animation: animloader 2s linear infinite alternate;
+    animation: animloader 2s linear forwards alternate;
     color: white;
     border-radius: 0 0 4px 4px;
     transform: perspective(140px) translate(-50%,-50%) rotateX(-45deg);
