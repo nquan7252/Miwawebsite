@@ -83,6 +83,16 @@ function isScrolledIntoView(elem)
 
     return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
 }
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
+$(document).ready(function(){
+  $('.loader').delay(1800).fadeOut(500,()=>{
+    $('#loader-container').delay(1000).fadeOut(100,()=>{
+      $('body').css('overflow','auto')
+    })
+  })
+})  
 // var form=document.querySelector('#form');
 // form.addEventListener('submit',(e)=>{
 //     e.preventDefault();

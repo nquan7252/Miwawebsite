@@ -11,6 +11,90 @@ html,body{
     height:100%;
     color:white;
 }
+body{
+    overflow: hidden; 
+}
+.loader {
+    position:absolute;
+    width: 32px;
+    height: 72px;
+    display: inline-block;
+    left: 50%;
+    top:50%;
+    z-index: 5;
+    /* position: relative; */
+    transform-origin: left;
+    border: 2px solid #FFF;
+    box-sizing: border-box;
+    animation: animloader 2s linear infinite alternate;
+    color: white;
+    border-radius: 0 0 4px 4px;
+    transform: perspective(140px) translate(-50%,-50%) rotateX(-45deg);
+  }
+  
+  @keyframes animloader {
+    0% {
+      box-shadow: 0 0  inset;
+    }
+    100% {
+      box-shadow: 0 -70px inset;
+    }
+  }
+#loader-container{
+    width: 100vw;
+    height:100vh;
+    position: absolute;
+    background-color: #181818;
+    z-index: 5;
+}
+.mouse {
+    width: 48px;
+    height: 78px;
+    position: relative;
+    box-sizing: border-box;
+    border: 2px solid #fff;
+    margin: auto;
+    margin-top: 50px;
+
+    border-radius: 50% 50% 50% 50% / 25% 25% 25% 25%;
+  }
+  .mouse::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 4px;
+    background: #fff;
+    border-radius: 10px;
+    animation: scrollDown 1.5s linear infinite;
+  }
+  @keyframes scrollDown {
+    0% {
+      top: 15px;
+      height: 4px;
+      opacity: 1;
+    }
+    33% {
+      top: 15px;
+      height: 40px;
+    }
+    66% {
+      top: 50px;
+      height: 10px;
+      opacity: 1;
+    }
+    100% {
+      top: 56px;
+      height: 4px;
+      opacity: 0;
+    }
+  }
+  .mouse-container{
+      display: flex;
+      flex-direction: column;
+  }
 section{
     width: 100vw;
     height:100vh;
@@ -39,7 +123,8 @@ h1 span::before,h1 span::after{
 
 h1 span::before{
     background-color: #181818;
-    animation: slide steps(33) 4.125s forwards;
+    animation: slide  steps(33) 4.125s forwards;
+    animation-delay: 3000ms;
 }
 h2{
     color:white;
@@ -65,6 +150,7 @@ h3{
     background-color:white;
     display: inline-block;
     animation: blink 750ms steps(2) infinite,slide steps(33) 4.125s forwards;
+    animation-delay: 3000ms;
 }
 .index{
     position: relative;
