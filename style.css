@@ -437,13 +437,13 @@ h4::after{
     color: black !important;
     max-width: 500px;
 }
-.info{
+/* .info{
     display: flex;
     justify-content: space-between;
     align-items: center;
     
     height:90%;
-}
+} */
 form{
     width: 40%;
 }
