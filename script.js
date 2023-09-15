@@ -61,6 +61,7 @@ document.addEventListener("scroll", () => {
     sidebar.style.pointerEvents = "auto";
     sidebar.style.filter = "invert(0)";
     sidebar.style.opacity = "1";
+    icons.querySelector("#homeicon")?.classList.add("active")
   } else {
     sidebar.style.opacity = "0";
     sidebar.style.pointerEvents = "none";
