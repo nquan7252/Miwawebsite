@@ -96,11 +96,15 @@ body{
       flex-direction: column;
   }
 section{
-    width: 100vw;
+/*     width: 100vw; */
     height:100vh;
     background-color: #181818;
 }
+h3{
+    text-align:center;
+}
 h1{
+    text-align:center;
     color:white;
     font-weight: 400;
     display: flex;
