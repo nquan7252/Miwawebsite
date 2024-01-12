@@ -179,6 +179,7 @@ a:hover{
     background-color: turquoise;
 }
 #portrait{
+    filter: brightness(80%);
     position: absolute;
     left: 0;
     bottom:0;
